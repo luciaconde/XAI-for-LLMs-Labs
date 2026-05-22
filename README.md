@@ -26,8 +26,35 @@ This workshop explores **explainability and interpretability** in the context of
 
 ### Python environment
 
+For Windows:
 ```bash
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+### Ollama
+For Lab 4, you need to have Ollama installed and the qwen2.5:4b model pulled:
+
+To install it on Windows:
+```bash
+irm https://ollama.com/install.ps1 | iex
+```
+
+On Mac:
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+To pull the model (522 MB) and run it:
+```bash
+ollama pull qwen3:0.6b
+ollama run qwen3:0.6b
+```
+
+Check that it has been correctly pulled by listing your installed models:
+```bash
+ollama list
 ```
 
 ---
@@ -43,4 +70,4 @@ pip install -r requirements.txt
 | **RAG** | Retrieval-Augmented Generation (grounding LLM answers in documents retrieved by their relevance to the user query) |
 | **Scope detector** | A classifier that decides whether a query is within the system's knowledge domain |
 | **CoT** | Chain-of-Thought prompting (asking the model to reason step by step e.g. by providing extra guidance or few-shot examples) |
-| **ToT** | Tree of Thoughts (extended CoT technoque for exploring multiple retractable reasoning branches) |
+| **ToT** | Tree of Thoughts (extended CoT technique for exploring multiple retractable reasoning branches) |
