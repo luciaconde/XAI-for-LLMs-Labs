@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ```
 
 ### Ollama
-For Lab 4, you need to have Ollama installed and the qwen2.5:4b model pulled:
+For Lab 4, you need to have Ollama installed and the qwen3:0.6b model pulled:
 
 To install it on Windows:
 ```bash
