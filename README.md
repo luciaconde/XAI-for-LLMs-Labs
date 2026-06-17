@@ -33,6 +33,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+For Mac:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 ### Ollama
 For Lab 4, you need to have Ollama installed and the qwen3:0.6b model pulled:
 
