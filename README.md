@@ -18,7 +18,7 @@ This workshop explores **explainability and interpretability** in the context of
 | 1 | [lab1-classic-xai](./lab1-classic-xai/) | Classic XAI (SHAP, LIME) on black-box models | ~20 min |
 | 2 | [lab2-interpretable-models](./lab2-interpretable-models/) | Interpretable models (transparency by design) | ~15 min |
 | 3 | [lab3-rag-scope-detector](./lab3-rag-scope-detector/) | Local RAG system + source attribution, inline citations, and ML scope detector | ~20 min |
-| 4 | [lab4-cot-prompts](./lab4-cot-prompts/) | Prompting transparency with Chain-of-Thought | ~15 min |
+| 4 | [lab4-cot-prompts](./lab4-cot-prompts/) | Prompt engineering techniques for transparent LLMs | ~15 min |
 
 ---
 
