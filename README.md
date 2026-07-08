@@ -43,4 +43,4 @@ pip install -r requirements.txt
 | **RAG** | Retrieval-Augmented Generation (grounding LLM answers in documents retrieved by their relevance to the user query) |
 | **Scope detector** | A classifier that decides whether a query is within the system's knowledge domain |
 | **CoT** | Chain-of-Thought prompting (asking the model to reason step by step e.g. by providing extra guidance or few-shot examples) |
-| **ToT** | Tree of Thoughts (extended CoT technoque for exploring multiple retractable reasoning branches) |
+| **ToT** | Tree of Thoughts (extended CoT technique for exploring multiple retractable reasoning branches) |
