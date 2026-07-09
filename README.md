@@ -24,7 +24,33 @@ This workshop explores **explainability and interpretability** in the context of
 
 ## Prerequisites
 
-### 1. Install Python
+### 1. Install an IDE
+
+You need an IDE that supports Jupyter notebooks. We recommend **Visual Studio Code (VS Code)**.
+
+Download and install it from [code.visualstudio.com](https://code.visualstudio.com/).
+
+After installing VS Code, install the **Jupyter** extension to run `.ipynb` notebook files:
+
+1. Open VS Code
+2. Go to the Extensions view (`Ctrl+Shift+X` on Windows, `Cmd+Shift+X` on Mac)
+3. Search for **Jupyter** (published by Microsoft)
+4. Click **Install**
+
+The Jupyter extension also installs the **Python** extension automatically if you don't already have it.
+
+#### Common installation issues
+
+| Problem | Fix |
+|---------|-----|
+| VS Code installer doesn't launch on Windows | Right-click the installer and select **Run as administrator** |
+| VS Code opens but the Jupyter extension can't be found | Make sure you have an internet connection; if behind a proxy, configure it under **File → Preferences → Settings → proxy** |
+| Notebooks open but "Select Kernel" shows no options | Ensure you have Python installed (step 2) and have activated the `.venv` environment; then click **Select Kernel → Python Environments** and pick the `.venv` interpreter |
+| `ipykernel` not found when running a cell | Run `pip install ipykernel` inside the activated `.venv`, then reload the kernel |
+
+---
+
+### 2. Install Python
 
 You need **Python 3.10 or later**. If you're not sure whether you have it, open a terminal and run:
 
@@ -60,7 +86,7 @@ Alternatively, download the macOS installer from [python.org/downloads](https://
 
 ---
 
-### 2. Set up the Python environment
+### 3. Set up the Python environment
 
 **Windows:**
 ```bash
@@ -89,7 +115,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3. Set up Ollama (for Labs 3 and 4)
+### 4. Set up Ollama (for Labs 3 and 4)
 
 For Labs 3 and 4, you need to have Ollama installed and the `qwen3:0.6b` model pulled:
 
