@@ -24,33 +24,7 @@ This workshop explores **explainability and interpretability** in the context of
 
 ## Prerequisites
 
-### 1. Install an IDE
-
-You need an IDE that supports Jupyter notebooks. We recommend **Visual Studio Code (VS Code)**.
-
-Download and install it from [code.visualstudio.com](https://code.visualstudio.com/).
-
-After installing VS Code, install the **Jupyter** extension to run `.ipynb` notebook files:
-
-1. Open VS Code
-2. Go to the Extensions view (`Ctrl+Shift+X` on Windows, `Cmd+Shift+X` on Mac)
-3. Search for **Jupyter** (published by Microsoft)
-4. Click **Install**
-
-The Jupyter extension also installs the **Python** extension automatically if you don't already have it.
-
-#### Common installation issues
-
-| Problem | Fix |
-|---------|-----|
-| VS Code installer doesn't launch on Windows | Right-click the installer and select **Run as administrator** |
-| VS Code opens but the Jupyter extension can't be found | Make sure you have an internet connection; if behind a proxy, configure it under **File → Preferences → Settings → proxy** |
-| Notebooks open but "Select Kernel" shows no options | Ensure you have Python installed (step 2) and have activated the `.venv` environment; then click **Select Kernel → Python Environments** and pick the `.venv` interpreter |
-| `ipykernel` not found when running a cell | Run `pip install ipykernel` inside the activated `.venv`, then reload the kernel |
-
----
-
-### 2. Install Python
+### 1. Install Python
 
 You need **Python 3.10 or later**. If you're not sure whether you have it, open a terminal and run:
 
@@ -86,7 +60,35 @@ Alternatively, download the macOS installer from [python.org/downloads](https://
 
 ---
 
+### 2. Install an IDE
+
+You need an IDE that supports Jupyter notebooks. We recommend **Visual Studio Code (VS Code)**.
+
+Download and install it from [code.visualstudio.com](https://code.visualstudio.com/).
+
+After installing VS Code, install the **Jupyter** extension to run `.ipynb` notebook files:
+
+1. Open VS Code
+2. Go to the Extensions view (`Ctrl+Shift+X` on Windows, `Cmd+Shift+X` on Mac)
+3. Search for **Jupyter** (published by Microsoft)
+4. Click **Install**
+
+The Jupyter extension also installs the **Python** extension automatically if you don't already have it.
+
+#### Common installation issues
+
+| Problem | Fix |
+|---------|-----|
+| VS Code installer doesn't launch on Windows | Right-click the installer and select **Run as administrator** |
+| VS Code opens but the Jupyter extension can't be found | Make sure you have an internet connection; if behind a proxy, configure it under **File → Preferences → Settings → proxy** |
+| Notebooks open but "Select Kernel" shows no options | Ensure you have Python installed (step 1) and have activated the `.venv` environment (step 3); then click **Select Kernel → Python Environments** and pick the `.venv` interpreter |
+| `ipykernel` not found when running a cell | Run `pip install ipykernel` inside the activated `.venv`, then reload the kernel |
+
+---
+
 ### 3. Set up the Python environment
+
+After opening the workshop repo on VSCode, run the following at the root of the repo:
 
 **Windows:**
 ```bash
@@ -154,3 +156,11 @@ ollama list
 | **Scope detector** | A classifier that decides whether a query is within the system's knowledge domain |
 | **CoT** | Chain-of-Thought prompting (asking the model to reason step by step e.g. by providing extra guidance or few-shot examples) |
 | **ToT** | Tree of Thoughts (extended CoT technique for exploring multiple retractable reasoning branches) |
+
+---
+
+## Help! The installation didn't work and I cannot run the labs
+
+If everything failed, don't worry! You can still follow all the Lab exercises by checking the results from a previous run we did. To do so, simply check out the project [at this exact commit](https://github.com/luciaconde/XAI-for-LLMs-Labs/tree/12d54f6c9da1405a7c386215ee05966e5784e741). Although you will sadly not be able to run your own prompts or make changes to the code, you will still be able to visualize all the Lab notebooks directly on the browser, along with the results, and answer some of the discussion questions.
+
+Hope you enjoy the workshop, and feel free to send us your feedback!
